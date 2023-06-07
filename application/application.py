@@ -18,7 +18,7 @@ numTasks = 10000
 tasks = []
 
 for i in range(numTasks):
-    time.sleep(2 * random.random())  # Random delay
+    # time.sleep(2 * random.random())  # Random delay
     tasks.append(
         app.send_task('addTask', (i, 3))  # Send task by name
     )
