@@ -24,7 +24,7 @@ services:
       - 5673:5672
       
   flower:
-    image: mher/flower:0.9.7
+    image: mher/flower:1.0.1
     environment:
       - CELERY_BROKER_URL=pyamqp://user:bitnami@rabbitmq:5673
       - FLOWER_PORT=8888
