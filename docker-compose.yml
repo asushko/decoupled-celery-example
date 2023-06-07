@@ -23,12 +23,3 @@ services:
     ports:
       - 5673:5672
 
-  flower:
-    image: mher/flower:0.9.7
-    environment:
-      - CELERY_BROKER_URL=amqp://user:bitnami@rabbitmq
-      - FLOWER_PORT=8888
-    ports:
-      - 8889:8888
-    depends_on:
-      - rabbitmq
